@@ -1,6 +1,8 @@
 
-var svgWidth = 1500;
-var svgHeight = window.innerHeight;
+//var svgWidth = window.innerWidth;
+var svgWidth = 960;
+//var svgHeight = window.innerHeight;
+var svgHeight = 700;
 
 
 var margin = {
@@ -236,7 +238,7 @@ d3.csv('./assets/data/data.csv').then(function(census) {
     var AgeLabel = XLabelsGroup.append('text')      
       .classed('aText', true)
       .attr('x', 0)
-      .attr('y', 30)
+      .attr('y', 35)
       .attr('value', 'age')
       .classed('inactive', true)
       .text('Age (Median)');  
@@ -244,7 +246,7 @@ d3.csv('./assets/data/data.csv').then(function(census) {
     var IncomeLabel = XLabelsGroup.append('text')      
       .classed('aText', true)
       .attr('x', 0)
-      .attr('y', 45)
+      .attr('y', 55)
       .attr('value', 'income')
       .classed('inactive', true)
       .text('Household Income (Median)')
@@ -257,7 +259,7 @@ d3.csv('./assets/data/data.csv').then(function(census) {
       .classed('aText', true)
       .attr('transform', 'rotate(-90)')
       .attr('x', 0)
-      .attr('y', 0 - 10)
+      .attr('y', 0 - 15)
       .attr('dy', '1em')      
       .attr('value', 'healthcare')
       .classed('active', true)
@@ -267,7 +269,7 @@ d3.csv('./assets/data/data.csv').then(function(census) {
       .classed('aText', true)
       .attr('transform', 'rotate(-90)')     
       .attr('x', 0)
-      .attr('y', 0 - 30)
+      .attr('y', 0 - 35)
       .attr('dy', '1em')
       .attr('value', 'smokes')
       .classed('inactive', true)
@@ -277,7 +279,7 @@ d3.csv('./assets/data/data.csv').then(function(census) {
       .classed('aText', true)
       .attr('transform', 'rotate(-90)')      
       .attr('x', 0)
-      .attr('y', 0 - 45)
+      .attr('y', 0 - 55)
       .attr('dy', '1em')     
       .attr('value', 'obesity')
       .classed('inactive', true)
