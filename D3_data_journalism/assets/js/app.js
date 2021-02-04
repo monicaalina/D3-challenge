@@ -38,7 +38,7 @@ function xScale(census, chosenXAxis) {
     // Create scales
     var xLinearScale = d3.scaleLinear()
       .domain([d3.min(census, d => d[chosenXAxis]) * 0.8,
-        d3.max(census, d => d[chosenXAxis]) * 1.2])
+        d3.max(census, d => d[chosenXAxis]) * 1])
       .range([0, width]);
 
     return xLinearScale;
@@ -49,7 +49,7 @@ function yScale(census, chosenYAxis) {
   // Create scales
   var yLinearScale = d3.scaleLinear()
     .domain([d3.min(census, d => d[chosenYAxis]) * 0.8,
-      d3.max(census, d => d[chosenYAxis]) * 1.2])
+      d3.max(census, d => d[chosenYAxis]) * 1])
     .range([height, 0]);
 
   return yLinearScale;
